@@ -1,38 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-.main-container {
-  width: 80%;
-  margin: auto;
-
-}
-
-.header-container {
-  width: 80%;
-  margin: auto;
-  padding: 100px;
-}
-
-.gallery-container{
-  padding: 100px 25px 0 25px;
-  width: 80%;
-  margin: auto;
-}
-
-.gallery-container div {
-  margin-bottom: 75px;
-}
-
-section,footer {
-  text-align: center;
-}
-
-h1,h2,h3 {
-  color: white;
-  justify-content: center;
-}
-
 *, *:after, *::before {
   margin: 0;
   padding: 0;
@@ -46,73 +14,75 @@ body {
   background-size: cover;
 }
 
-
-h1{
-  font-family: 'Inspiration';
-  font-size: 100px;
-  display: flex;
-}
-
-h2,h3 {
-  font-family: 'Poppins';
-  font-size: 25px;
-  display: flex;
-}
-
-p {
-  color: white;
-  font-family: Poppins;
-  font-size: 20px;
-  display: flex;
-}
-
-a:link,
-a:visited {
-  color: white;
-  display: flex;
-  justify-content: center;
-}
-
-a:hover {
-  color: hotpink;
-}
-
- .main-container img:hover {
-  transform: scale(1.1);
-  filter:drop-shadow(10px 10px 30px rgba(231, 101, 172, 0.603));
-}
-
-.information-container figure summary {
-  cursor: pointer;
-}
-
-.information-container {
-  width: 80%;
-  margin: auto;
-  justify-content: center;
-}
-
-.information-container figure {
-  margin: 50;
-  padding: 0;
-  margin-right: 15px;
-}
-.information-container div {
-  width: 30%;
-  padding: 100px;
-}
-.information-container figure {
-  width: 300px;
-
-}
-
-.main-container figure img {
-
-  transition: transform .5s ease-in-out
+header, section {
+  margin-bottom: 100px;
 }
 
 footer {
   display: flex;
   justify-content: center;
   padding: 50px;
+}
+
+h1,h2,h3 {
+  color: white;
+  justify-content: center;
+}
+
+h1{
+  font-family: 'Inspiration';
+  font-size: 120px;
+  filter: drop-shadow(0px 0px 20px rgba(194, 65, 65, 0.942));
+}
+
+h2, h3 {
+  font-family: 'Poppins';
+  font-size: 25px;
+}
+
+p {
+  color: white;
+  font-family: Poppins;
+  font-size: 20px;
+}
+
+a:link,
+a:visited { color: white; }
+
+a:hover { color: hotpink; }
+
+.main-container {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.main-container img { 
+  border: 5px solid rgba(0, 0, 0, 0.152);
+  border-radius: 15px;
+  transition: transform .5s ease-in-out;  
+ }
+
+.main-container img:hover {
+  /* transform: scale(1.1); */
+  filter:drop-shadow(10px 10px 30px rgba(231, 101, 172, 0.603));
+}
+
+/* Small */
+@media (max-width: 576px) {
+  .main-container { width: 60%; }
+
+  img:hover {
+    transform: scale(1);
+  }
+}
+
+/*  Medium */
+@media (min-width: 768px) {
+  .main-container { width: 60%; }
+}
+
+/* Large */
+@media (min-width: 992px) {
+  .main-container { width: 40%; }
 }
