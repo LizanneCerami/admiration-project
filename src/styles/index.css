@@ -10,7 +10,7 @@
 body {
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-image: url(/src/images/beachbackground.jpg);
+  background-image: url("https://lizannecerami.github.io/admiration-project/src/images/beachbackground.jpg");
   background-size: cover;
 }
 
